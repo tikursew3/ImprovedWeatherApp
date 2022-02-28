@@ -7,4 +7,9 @@
     <string name="high">High 78°</string>
     <string name="humidity">Humidity 100%</string>
     <string name="pressure">Pressure 1023 hPa</string>
+
+    <string name="date">Jan 31</string>
+
+
+
 </resources>
