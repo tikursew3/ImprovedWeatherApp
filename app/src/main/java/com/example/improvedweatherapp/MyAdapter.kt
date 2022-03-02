@@ -51,7 +51,11 @@ class MyAdapter(private val data: List<DayForecast>): RecyclerView.Adapter<MyAda
 
             sunsetView.text = "sunset: " + sunsetFormatter.format(sunsetTime)
 
-
+            val iconName = data.weather.firstOrNull()?.icon
+            val iconUrl = "https://openweathermap.org/img/wn/${iconName}@2x.png"
+            Glide.with(itemView.context)
+                .load(iconUrl)
+                .into(weatherIcon)
 
         }
     }
